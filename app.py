@@ -4,7 +4,8 @@ import numpy as np
 
 st.set_page_config(page_title="Restaurant Rating Predictor", layout="centered")
 
-model = joblib.load("model.pkl")
+st.warning("Model file not found. Cloud deployment requires auto-training.")
+st.stop()
 
 st.title("🍽️ Restaurant Rating Prediction System")
 st.markdown("Enter restaurant details to predict its customer rating using a Machine Learning model.")
